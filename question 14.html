@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>Use Google Font exercise</title>
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<style type="text/css">
+p {
+font-family: 'Indie Flower', cursive;
+}
+</style>
+</head>
+<body>
+<p>SQL tutorial of w3resource is a comprehensive tutorial to learn SQL. We have followed SQL:2003 standard of ANSI. There are hundreds of examples given in this tutorial. Output are shown with Oracle 10G. Often outputs are followed by pictorial presentation and explanation for better understanding</p>
+<!--How do I
+1.Go to https://www.google.com/fonts
+2.Select your font
+3.Click on the Left Arrow button out of tiny buttons just under the text displayed
+4.Add code under '3. Add this code to your website:' within head section of your page
+5.Click on the JavaScript tab and and that code just above the closing body tag of your page
+6.Add 'font-family: 'Indie Flower', cursive;', replacing font name with the one you are using as shown in this page within style tags or your 
+external CSS
+-->
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Indie+Flower::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+</body>
+</html>

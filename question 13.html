@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>Image cross effect with CSS3 transition</title>
+<style type="text/css">
+.changer img { transition: 1s ease-in-out; }
+  img.step1, div.changer:hover img.step2 { opacity: 1.0; }
+  .changer:hover img.step1, img.step2 { opacity: 0; }
+</style>
+</head>
+<body>
+<div class="changer">
+<img class="step1" style="position: absolute;" src="1.jpg" alt="">
+<img class="step2" src="2.jpg" alt="">
+</div>
+</body>
+</html>
